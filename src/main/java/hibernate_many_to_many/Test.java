@@ -30,6 +30,8 @@ public class Test {
 
             session.beginTransaction();
 
+            session.save(section1);
+
             session.getTransaction().commit();
             System.out.println("Done!");
         }
